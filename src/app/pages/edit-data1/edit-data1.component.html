@@ -1,0 +1,43 @@
+<div class="container m-5 ">
+    <form [formGroup]="Firstform" (ngSubmit)="addInfo()">
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>NAME</mat-label>
+                <input matInput placeholder="Enter Name" type="text" formControlName="name">
+                <mat-icon matSuffix>person</mat-icon>
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>EMAIL</mat-label>
+                <input matInput placeholder="Enter Email" type="email" formControlName="email">
+                <mat-icon matSuffix>email</mat-icon>
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>ADDRESS</mat-label>
+                <input matInput placeholder="Enter Address" type="text" formControlName="address">
+                <mat-icon matSuffix>address</mat-icon>
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>PHONE NO</mat-label>
+                <input matInput placeholder="Enter Phone No" type="number" formControlName="phoneNo">
+                <mat-icon matSuffix>phone</mat-icon>
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>CTC</mat-label>
+                <input matInput placeholder="Confirm Your CTC" type="number" formControlName="ctc">
+                <mat-icon matSuffix>money</mat-icon>
+            </mat-form-field>
+        </p>
+        <p class="m-3 d-flex " style="gap: 35px;">
+            <button class="btn btn-success" type="submit" [disabled]="">{{SUBMIT}}</button>
+            <button class="btn btn-danger" routerLink="/home/data1">CANCLE</button>
+        </p>
+    </form>
+</div>

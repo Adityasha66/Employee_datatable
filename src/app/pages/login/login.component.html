@@ -1,0 +1,16 @@
+<div class="container">
+    <h1 class="title">Login Page</h1>
+    <div class="card">
+        <form>
+            <div class="form-group">
+                <input type="text" placeholder="Email" [(ngModel)]="login.email" [ngModelOptions]="{standalone: true}" id="email" required>
+                <input type="password" placeholder="Password" [(ngModel)]="login.password" [ngModelOptions]="{standalone: true}" id="password" required>
+                <div class="buttons">
+                    <a href="#" class="register-link" routerLink="/signup">SignUp</a>
+                    <button type="submit" class="login-button" (click)="onSubmit()">Login</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <p class="mt-3" style="color: rgb(204, 219, 0); font-size: larger; font-weight: 200;">Sign Up if you have no account</p>
+</div>

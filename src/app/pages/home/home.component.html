@@ -1,0 +1,24 @@
+<mat-toolbar style=" background-color: #180c31; color: rgb(255, 255, 255);">
+    <button mat-icon-button class="example-icon" (click)="toggleChange()">
+            <mat-icon style="color: rgb(255, 255, 255);">menu</mat-icon>
+          </button>
+    <span style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+        MY APP
+    </span>
+</mat-toolbar>
+
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" class="slider" id="abc" opened>
+        <li>
+            <p routerLink="/home/data1">
+                <mat-icon style="color: rgb(246, 255, 0);">ballot</mat-icon> DATA
+            </p>
+        </li>
+
+    </mat-drawer>
+    <mat-drawer-content>
+        <router-outlet>
+
+        </router-outlet>
+    </mat-drawer-content>
+</mat-drawer-container>
